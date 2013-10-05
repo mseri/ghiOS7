@@ -1,0 +1,593 @@
+@import url(normalize.css);
+
+/* I keep using pureBuster icon font */
+@font-face {
+    font-family: 'icons';
+    src:url('../fonts/pureBuster.eot');
+    src:url('../fonts/pureBuster.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pureBuster.woff') format('woff'),
+        url('../fonts/pureBuster.ttf') format('truetype'),
+        url('../fonts/pureBuster.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.normal-font {
+	font-weight:300;
+}
+.bold-font {
+	font-weight:500;
+}
+
+/* ==========================================================================
+   1. iOS7 Colors
+   ========================================================================== */
+
+.blue {
+	color: rgb(21,125,251);
+}
+.black {
+	color: rgb(0,0,0);
+}
+.borders-grey {
+	color: rgb(200,199,204);
+}
+.text-grey {
+	color: rgb(111,111,116);
+}
+.title-bg-grey {
+	background: rgb(248,248,248);
+}
+.view-bg-white {
+	background: rgb(255,255,255);
+}
+
+
+/* ==========================================================================
+   2. Icons
+   ========================================================================== */
+
+
+/* Apply these base styles to all icons */
+.icon-ghost,
+.icon-feed,
+.icon-feed-1,
+.icon-feed-inv,
+.icon-twitter,
+.icon-twitter-1,
+.icon-twitter-inv,
+.icon-google-plus,
+.icon-google-plus-1,
+.icon-google-plus-inv,
+.icon-facebook,
+.icon-facebook-1,
+.icon-facebook-inv,
+.icon-leaf,
+.icon-linkedin,
+.icon-linkedin-inv,
+.icon-github,
+.icon-github-1,
+.icon-github-inv,
+.icon-bitbucket,
+.icon-bitbucket-inv,
+.icon-cloud,
+.icon-lamp,
+.icon-youtube,
+.icon-youtube-inv,
+.icon-flickr,
+.icon-dropbox,
+.icon-tumblr,
+.icon-tumblr-inv,
+.icon-skype,
+.icon-apple,
+.icon-windows,
+.icon-android,
+.icon-linux {
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    font-size: 75%;
+}
+
+/* Each icon is created by inserting the corret character into the 
+   content of the :before pseudo element. Like a boss. */
+.icon-ghost:before {content: "\e000";}
+.icon-feed:before {content: "\f09e";}
+.icon-feed-1:before {content: "\e001";}
+.icon-feed-inv:before {content: "\e004";}
+.icon-twitter:before {content: "\f099";}
+.icon-twitter-1:before {content: "\e002";}
+.icon-twitter-inv:before {content: "\f081";}
+.icon-google-plus:before {content: "\f0d4";}
+.icon-google-plus-1:before {content: "\e006";}
+.icon-google-plus-inv:before {content: "\f0d5";}
+.icon-facebook:before {content: "\e007";}
+.icon-facebook-1:before {content: "\f082";}
+.icon-facebook-inv:before {content: "\f09a";}
+.icon-leaf:before {content: "\f06c";}
+.icon-linkedin:before {content: "\f08c";}
+.icon-linkedin-inv:before {content: "\f0e1";}
+.icon-github:before {content: "\f092";}
+.icon-github-1:before {content: "\f09b";}
+.icon-github-inv:before {content: "\f113";}
+.icon-bitbucket:before {content: "\f171";}
+.icon-bitbucket-inv:before {content: "\f172";}
+.icon-cloud:before {content: "\f0c2";}
+.icon-lamp:before {content: "\f0eb";}
+.icon-youtube:before {content: "\f167";}
+.icon-youtube-inv:before {content: "\f166";}
+.icon-flickr:before {content: "\f16e";}
+.icon-dropbox:before {content: "\f16b";}
+.icon-tumblr:before {content: "\f173";}
+.icon-tumblr-inv:before {content: "\f174";}
+.icon-skype:before {content: "\f17e";}
+.icon-apple:before {content: "\f179";}
+.icon-windows:before {content: "\f17a";}
+.icon-android:before {content: "\f17b";}
+.icon-linux:before {content: "\f17c";}
+
+/* ==========================================================================
+   3. General Setup
+   ========================================================================== */
+* {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    line-height: 1;
+    margin-top: 0;
+    font-weight: 500;
+    color: rgb(21,125,251);
+}
+
+h1 {
+    font-size: 2rem;
+    text-indent: -3px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-indent: -2px;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+a {
+	text-decoration: none;
+    color: rgb(21,125,251);
+}
+a:hover,
+a:focus,
+a:visited {
+    color: rgb(91,110,251);
+}
+
+/* Hides shit */
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+}
+
+/* ==========================================================================
+   3. Theme starts
+   ========================================================================== */
+
+:focus {
+    outline: 0;
+} 
+ul {
+    list-style: none;
+} 
+html, body {
+	overflow: hidden;
+}
+
+body {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: none;
+	        text-size-adjust: none;
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	position: fixed;
+
+
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+strong {
+    font-weight: 500;
+}
+
+em {
+    font-style: italic;
+}
+
+header.global-head {
+	position: absolute;
+	top:0;
+	height: 88px;
+	line-height: 88px;
+	width: 100%;
+	padding-top: 0;
+	background-color: rgba(248, 248, 248, 0.9);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	z-index: 10;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	-webkit-touch-callout: none;
+	border-bottom: 1px solid rgb(200, 199, 204);
+}
+
+.blog-logo {
+	position:absolute;
+	top:0;
+	left:0;
+	margin: 4px;
+	display:block;
+	background: transparent;
+}
+.blog-logo img {
+	max-height: 80px; 
+	max-width: 80px;
+}
+header a {
+	text-decoration: none;
+}
+
+footer.global-foot {
+	position: absolute;
+	bottom:0;
+	height: 44px;
+	width: 100%;
+	padding-top: 0;
+	margin-left:4px;
+	vertical-align: bottom;
+	background-color: rgba(248, 248, 248, 0.9);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	z-index: 10;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	-webkit-touch-callout: none;
+	border-top: 1px solid rgb(200, 199, 204);
+}
+
+footer div, footer a {
+	margin:0;
+	padding-top: 5px;
+	/*text-align: center;*/
+	color: rgb(111,111,116);
+	font-size: 0.8em;
+}
+
+.scroll { 
+	width: 100%;
+	padding-right: 20px;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 1;
+	opacity: 1;
+}
+
+.scrollWrap {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.scrollMask {
+	width: 100%;
+	position: absolute;
+	top: 88px;
+	bottom: 0;
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+	        box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+	position:relaitve;
+	line-height: 1em;
+	margin-top: 88px;
+	font-weight: 400;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 46px;
+}
+
+header.global-head h1 {
+	display: block;
+	padding: 0;
+	padding-left: 2px;
+	font-size: 2em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/*text-align: center;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-flex: 1;
+	   -moz-box-flex: 1;
+	        box-flex: 1;
+	margin: 0 65px;
+	margin-top:10px;
+	margin-left: 90px;
+    -webkit-tap-highlight-color: transparent;
+}
+header.global-head .blog-description {
+	font-size: 0.9em;
+	color: rgb(111,111,116);
+	display: block;
+	padding: 0;
+	padding-left: 2px;
+	font-size: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/*text-align: center;*/
+	overflow: hidden;
+	margin-top: -30px;
+	margin-left: 90px;
+}
+header.global-head h3 {
+	font-size: 2em;
+	line-height: 1.5em;
+	font-weight: 400;
+	text-align: center;
+    padding: 6px;
+    margin-left: 90px;
+    padding-left: 2px;
+    text-overflow: ellipsis;
+}
+ul {
+	padding-right: 5%;
+}
+li {
+	display: block;
+    padding: 6px 15px 6px 0;
+    margin-left: 15px;
+    font-weight: 300;
+	background-image: none;
+	border-bottom: 1px solid rgb(200, 199, 204);
+}
+li .post-header {
+	font-size: 1.25rem;
+	font-weight: 500;
+	padding-top: 0.25em;
+	margin-bottom: -2px;
+}
+li .post-description {
+	color: rgb(111, 111, 116);
+	padding: 5px 0 5px 0;
+	margin-top:-1em;
+	margin-bottom: -1em;
+}
+.innerLi {
+    padding-right: 5%;
+}
+li.pagination {
+	font-size: 0.8em;
+	color: rgb(111, 111, 116);
+	padding: 10px 0 5px 0;
+	border: none;
+	margin-top:-0.5em;
+}
+
+p {
+	line-height: 1.5em;
+    padding: 6px;
+}
+article.post {
+	border-bottom: none;
+}
+article,li {
+	display: block;
+    padding: 6px 15px 6px 0;
+    font-weight: 300;
+	background-image: none;
+	border-bottom: 1px solid rgb(200, 199, 204);
+}
+article li {
+	border: none;
+	margin-left: 0;
+}
+article ol {
+	list-style: decimal inside;
+}
+article img {
+	width: 100%;
+}
+div.post-meta {
+	margin-top: -1em;
+	color: rgb(111, 111, 116);
+	font-size: 0.8em;
+}
+
+article h2, article h3, article h4, article h5, article h6 {
+	margin-bottom: -15px;
+}
+
+blockquote {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.2em 0 1.2em 5px;
+    padding: 0 0 0 1.2em;
+    border-left: rgb(200,199,204) 0.4em solid;
+    color: rgb(111,111,116);
+}
+
+blockquote p {
+    margin: 0.8em 0;
+    font-style: italic;
+}
+
+blockquote small {
+    display: inline-block;
+    margin: 0.8em 0 0.8em 1.5em;
+    font-size:0.9em;
+}
+
+blockquote small:before { content: '\2014 \00A0'; }
+
+blockquote cite {
+    font-weight:bold;
+}
+
+blockquote cite a { font-weight: normal; }
+
+code {
+    padding: 1px 3px;
+    font-family: 'Menlo', 'Ubuntu Mono', monospace, sans-serif;
+    font-size: 0.85em;
+    white-space: pre;
+    border: 1px solid rgb(200,199,204) ;
+    background: rgb(248,248,248);
+    font-weight: 300;
+    color: rgb(111,111,116);
+}
+
+pre {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.6em 0;
+    border: 1px solid rgb(200,199,204);
+    width: 100%;
+    padding: 10px;
+    font-family: 'Menlo', 'Ubuntu Mono', monospace, sans-serif;
+    font-size: 0.9em;
+    white-space: pre;
+    overflow: auto;
+    background: rgb(248,248,248);;
+}
+
+pre code {
+    font-size: inherit;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(200,199,204);
+    padding: 0;
+}
+
+/* The author credit area after the post */
+footer.post-footer {
+    position: relative;
+    margin: 0.6rem 0 0.6em 0;
+    padding: 0.6rem 0 0.6em 0;
+    border-top: rgb(200,199,204) 1px solid;
+}
+
+.post-footer h4 {
+    margin: 0;
+    color: rgb(200,199,204);
+}
+
+.post-footer p {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8em;
+}
+
+/* Create some space to the right for the share links */
+.post-footer .author {
+    margin-right: 180px;
+}
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+.post-footer .share {
+    position: absolute;
+    top: 0.6rem;
+    right: 0;
+    width: 140px;
+}
+
+.post-footer .share a {
+    display: inline-block;
+    margin: 0.4rem 0.6rem 0.6rem 0;
+    color: rgb(200,199,204);
+}
+
+.post-footer .share a:hover {
+    color: rgba(200,199,204,0.8);
+}
+
+section.post-comments {
+	margin-top:1.8em;
+	margin-bottom: 0.6em;
+}
+
+/* ==========================================================================
+   3. Additional classes
+   ========================================================================== */
+
+.hidden {
+	left: -9999px;
+	top: -9999px;
+	pointer-events: none;
+}
+
+/* ==========================================================================
+   3. Media Queries
+   ========================================================================== */
+
+
+@media (max-width: 970px) {
+	.content {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+}

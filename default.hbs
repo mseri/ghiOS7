@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{#if post.title}} {{meta_title}} | {{@blog.title}}{{else}}{{meta_title}}{{/if}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" href="{{@blog.url}}/assets/css/style.css">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    {{! The big featured header on the homepage, with the site logo and description }}
+    <header class="global-head">
+        <hgroup>
+            <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+            <div class="blog-description">{{@blog.description}}</div>
+            {{#if @blog.logo}}<div class="blog-logo"><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a></div>{{/if}}
+        </hgroup>
+
+       <!-- <nav class="nav">
+            <ul class="social-list">
+                <li class="social-item"><a class="subscribe icon-twitter" href="http://www.twitter.com/..." target="_blank"></a></li>&nbsp;
+                <li class="social-item"><a class="subscribe icon-facebook" href="http://www.facebook.com/..." target="_blank"></a></li>&nbsp; 
+                <li class="social-item"><a class="subscribe icon-github" href="http://www.github.com/..." target="_blank"></a></li>&nbsp;
+                <li class="social-item">&nbsp;</li>
+                <li class="social-item"><a class="subscribe icon-feed" href="{{@blog.url}}/rss/" target="_blank"></a></li>
+            </ul>
+        </nav> -->
+        {{! Here one could add a nav.nav containing ul.nav-list and li.nav-item }}
+    </header>
+    <div class="scrollMask"></div>
+    <div class="scrollWrap"><div class="scroll">
+        <main class="content" role="main">
+            {{! Everything else gets inserted here }}
+            {{{body}}}
+        </main>
+    </div></div>
+    <footer class="global-foot">
+       <div class="copyright">&copy; 2013 <a href="{{@blog.url}}">{{@blog.title}}</a>, all rights reserved</div>
+       <div class="poweredby">Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div> 
+    </footer>
+
+   {{! Ghost outputs important scripts and data with this tag }}
+   {{ghost_foot}}
+
+   {{! The main JavaScript file for Casper }}
+   <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
