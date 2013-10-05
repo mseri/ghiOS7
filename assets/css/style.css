@@ -146,7 +146,9 @@ h4, h5, h6 {
     line-height: 1;
     margin-top: 0;
     font-weight: 500;
-    color: rgb(21,125,251);
+    /*color: rgb(76,76,116);/*rgb(21,125,251);*/
+    color: rgba(111,111,116);
+
 }
 
 h1 {
@@ -331,10 +333,9 @@ footer div, footer a {
 	line-height: 1em;
 	margin-top: 88px;
 	font-weight: 400;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 46px;
+	margin-bottom: 62px;
+	margin-left:10px;
+	margin-right: 10px;
 }
 
 header.global-head h1 {
@@ -401,6 +402,7 @@ li .post-description {
 	padding: 5px 0 5px 0;
 	margin-top:-1em;
 	margin-bottom: -1em;
+	max-width: 800px;
 }
 .innerLi {
     padding-right: 5%;
@@ -417,8 +419,14 @@ p {
 	line-height: 1.5em;
     padding: 6px;
 }
+article {
+	padding-right:5%;
+}
 article.post {
 	border-bottom: none;
+	max-width: 800px;
+	padding: 6px 15px 6px 0;
+    margin-left: 55px;
 }
 article,li {
 	display: block;
@@ -439,7 +447,7 @@ article img {
 }
 div.post-meta {
 	margin-top: -1em;
-	color: rgb(111, 111, 116);
+	color: rgb(200,199,204);
 	font-size: 0.8em;
 }
 
