@@ -6,9 +6,9 @@ To set up google+, disqus or facebook comments is enough to open posts.hbs, unco
 
 Some screenshots are available here:
 
-- [1280x1024](https://raw.github.com/mseri/ghiosSeven/master/screenshot/12801024.png)
-- [1024x768](https://raw.github.com/mseri/ghiosSeven/master/screenshot/1024768.png)
-- [640x960](https://raw.github.com/mseri/ghiosSeven/master/screenshot/640960.png)
+- [1280x1024 v.0.0.1](https://raw.github.com/mseri/ghiosSeven/master/screenshot/12801024.png)
+- [1024x768 v.0.0.1](https://raw.github.com/mseri/ghiosSeven/master/screenshot/1024768.png)
+- [640x960 v.0.0.1](https://raw.github.com/mseri/ghiosSeven/master/screenshot/640960.png)
 
 ## History
 
