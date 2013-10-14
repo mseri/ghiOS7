@@ -578,6 +578,7 @@ section.post-comments {
 	float:right;
 	bottom: 0;
 	right: 0; 
+	min-width: 150px;
 }
 
 ul.social-list li {
