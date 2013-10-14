@@ -6,11 +6,8 @@ To set up google+, disqus or facebook comments is enough to open posts.hbs, unco
 
 ## History
 
+- 0.0.2 list numbers fixed (thanks to [David](http://theonlycog.com)), improved iOS7 styles (thanks to [CSS iOS7 toggle](http://freebiesbug.com/code-stuff/ios7-toggles-css/)), added social icons
 - 0.0.1 first release
-
-## Known problems
-
-Ordered lists appears without numbers
 
 ## Copyright & License
 

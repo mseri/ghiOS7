@@ -29,13 +29,7 @@
         </hgroup>
 
        <!-- <nav class="nav">
-            <ul class="social-list">
-                <li class="social-item"><a class="subscribe icon-twitter" href="http://www.twitter.com/..." target="_blank"></a></li>&nbsp;
-                <li class="social-item"><a class="subscribe icon-facebook" href="http://www.facebook.com/..." target="_blank"></a></li>&nbsp; 
-                <li class="social-item"><a class="subscribe icon-github" href="http://www.github.com/..." target="_blank"></a></li>&nbsp;
-                <li class="social-item">&nbsp;</li>
-                <li class="social-item"><a class="subscribe icon-feed" href="{{@blog.url}}/rss/" target="_blank"></a></li>
-            </ul>
+            
         </nav> -->
         {{! Here one could add a nav.nav containing ul.nav-list and li.nav-item }}
     </header>
@@ -49,6 +43,15 @@
     <footer class="global-foot">
        <div class="copyright">&copy; 2013 <a href="{{@blog.url}}">{{@blog.title}}</a>, all rights reserved</div>
        <div class="poweredby">Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div> 
+       <div class="social-icon-box">
+       <ul class="social-list">
+                <li class="social-item"><a class="subscribe icon-twitter" href="http://www.twitter.com/..." target="_blank"></a></li>&nbsp;
+                <li class="social-item"><a class="subscribe icon-facebook" href="http://www.facebook.com/..." target="_blank"></a></li>&nbsp; 
+                <li class="social-item"><a class="subscribe icon-github" href="http://www.github.com/..." target="_blank"></a></li>&nbsp;
+                <li class="social-item">&nbsp;</li>
+                <li class="social-item"><a class="subscribe icon-feed" href="{{@blog.url}}/rss/" target="_blank"></a></li>
+            </ul>
+       </div>
     </footer>
 
    {{! Ghost outputs important scripts and data with this tag }}
