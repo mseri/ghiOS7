@@ -4,6 +4,12 @@ A [MathJax](http://www.mathjax.org) ready theme for [Ghost](http://github.com/tr
 
 To set up google+, disqus or facebook comments is enough to open posts.hbs, uncomment the appropriate section at the end of the file and add the appropriate variables.
 
+Some screenshots are available here:
+
+- [1280x1024](https://raw.github.com/mseri/ghiosSeven/master/screenshot/12801024.png)
+- [1024x768](https://raw.github.com/mseri/ghiosSeven/master/screenshot/1024768.png)
+- [640x960](https://raw.github.com/mseri/ghiosSeven/master/screenshot/640960.png)
+
 ## History
 
 - 0.0.2 list numbers fixed (thanks to [David](http://theonlycog.com)), improved iOS7 styles (thanks to [CSS iOS7 toggle](http://freebiesbug.com/code-stuff/ios7-toggles-css/)), added social icons
