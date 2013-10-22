@@ -382,6 +382,7 @@ header.global-head h3 {
 }
 ul {
 	padding-right: 5%;
+	max-width: 800px;
 }
 li {
     padding: 6px 15px 6px 0;
