@@ -10,6 +10,8 @@ Some screenshots are available here:
 - [Post](https://raw.github.com/mseri/ghiosSeven/master/screenshot/ghioSeven-page.png)
 - [Post with different resolution](https://raw.github.com/mseri/ghiosSeven/master/screenshot/ghioSeven-part.png)
 
+Don't forget to have a look to my other Ghost theme: [purity](http://gum.co/purity)
+
 ## History
 
 - 0.0.2 list numbers fixed (thanks to [David](http://theonlycog.com)), improved iOS7 styles (thanks to [CSS iOS7 toggle](http://freebiesbug.com/code-stuff/ios7-toggles-css/)), added social icons
