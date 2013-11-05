@@ -1,4 +1,4 @@
-# ghiostSeven
+# ghiOS7
 
 A [MathJax](http://www.mathjax.org) ready theme for [Ghost](http://github.com/tryghost/ghost/) inspired by iOS7 look.
 
